@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Destination Image -->
+
+        <ImageView
+            android:id="@+id/ivDestination"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:scaleType="centerCrop"
+            android:background="#E5E7EB"
+            android:src="@android:drawable/ic_menu_gallery"
+            android:contentDescription="Destination photograph"/>
+
+        <!-- Destination Information -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EXPLORE DESTINATION"
+                android:textColor="@color/secondary"
+                android:textSize="12sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Paris, France"
+                android:textColor="@color/heading"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:paddingTop="12dp"/>
+
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Discover beautiful destinations around the world."
+                android:textColor="@color/description"
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp"
+                android:paddingTop="18dp"
+                android:paddingBottom="25dp"/>
+
+            <Button
+                android:id="@+id/btnReadMore"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Read Full Article"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:backgroundTint="@color/secondary"/>
+
+            <Button
+                android:id="@+id/btnBackHome"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:text="Back to Explore"
+                android:textColor="@color/primary"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/light_teal"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
